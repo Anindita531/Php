@@ -1,21 +1,38 @@
 <?php
-/* day1 */
-/*PHP Syntax */
-echo "My Name is Anindita Ghosh .<br>";
-echo "I am Learning PHP .<br>";
-echo "Hello, Anindita!";
-
-	
-//Echo ও Print
- 
-echo "Learning PHP is fun!<br>";
-print "This is my first PHP code!<br>";
- 
-
-//Variables started with always $
- 
+//Variables in PHP
 $name = "Anindita";
 $age = 21;
+$college = "St. Thomas College";
 
-echo "My name is $name and I am $age years old.";
+echo "My name is $name. I am $age years old and I study at $college.<br>";
+//3. Constants
+define("SITE_NAME", "My PHP Learning<br>");
+echo SITE_NAME;
+//4. Data Types
+
+$num = 10;                // Integer
+$price = 199.99;          // Float
+$name = "PHP";            // String
+$isEasy = true;           // Boolean
+$colors = array("Red", "Blue", "Green"); // Array
+
+var_dump($colors);  // Debugging
+
+// Single-line comment
+
+# Another single-line comment
+
+/*
+  Multi-line
+  comment
+*/
+#2. Echo vs Print Both are used to display output.
+
+echo "<br>Hello World!<br>";
+print "Welcome to PHP!";
+
+#echo → Faster, can output multiple strings.
+
+#print → Slightly slower, returns a value (1).
+
 ?>
