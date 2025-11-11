@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>👥 User Dashboard</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+<style>
+  body { max-width: 800px; margin: 40px auto; background: #f7f8fa; padding: 20px; border-radius: 10px; }
+  h1 { text-align: center; }
+  .user-card { background: white; padding: 15px; border-radius: 10px; margin: 10px 0; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+  button { margin-right: 5px; }
+</style>
+</head>
+<body>
+
+<h1>👥 User Dashboard</h1>
+
+<form id="addForm">
+  <input type="text" id="name" placeholder="Enter name" required>
+  <input type="email" id="email" placeholder="Enter email" required>
+  <button type="submit">Add User</button>
+</form>
+
+<hr>
+
+<div id="userList"></div>
+
+<script src="script.js"></script>
+</body>
+</html>

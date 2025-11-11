@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background: linear-gradient(135deg, #a73939ab, #ad21214f);
+   transition: background 0.3s ease;
+
+}
+body:hover {
+    transform: scale(1.02);
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.palette{
+    display: flex;
+   
+    justify-content: center;
+    gap: 20px;
+}
+.mood{
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}.mood:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.color-box{
+    width: 100%;
+    height: 33.33%;
+    border-radius: 10px 10px 0 0;
+}

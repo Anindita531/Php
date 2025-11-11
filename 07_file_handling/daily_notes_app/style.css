@@ -1,0 +1,41 @@
+    body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #ece9e6, #ffffff);
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #444;
+        }
+        .note-box {
+            background: #fafafa;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 10px auto;
+            width: 50%;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        form {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        textarea {
+            width: 50%;
+            height: 60px;
+            padding: 10px;
+        }
+        button {
+            background: #007BFF;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            margin: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+        .edit-form {
+            margin-top: 10px;
+        }

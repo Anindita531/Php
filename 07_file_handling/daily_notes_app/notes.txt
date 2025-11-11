@@ -1,0 +1,11 @@
+✅ Features:
+
+Add notes (stored in notes.txt)
+
+Delete notes by clicking 🗑️
+
+Edit notes instantly with inline edit form
+
+File-safe: automatically creates and updates file
+
+No database needed!

@@ -1,0 +1,7 @@
+body { font-family: Poppins, sans-serif; text-align: center; background:#f0f8ff; }
+form input { padding:8px; margin:5px; border-radius:5px; border:1px solid #aaa; }
+button { background:#00796b; color:white; border:none; padding:8px 15px; border-radius:5px; }
+table { margin:auto; border-collapse:collapse; }
+th, td { padding:10px; }
+th { background:#004d40; color:white; }
+tr:nth-child(even) { background:#78ddd8; }
