@@ -1,0 +1,15 @@
+.btn-share, .btn-facebook, .btn-twitter, .btn-whatsapp {
+    padding: 8px 15px;
+    margin: 5px 5px 5px 0;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.btn-share { background-color: #007bff; }
+.btn-facebook { background-color: #3b5998; }
+.btn-twitter { background-color: #1da1f2; }
+.btn-whatsapp { background-color: #25d366; }
