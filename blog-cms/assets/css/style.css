@@ -1,0 +1,256 @@
+/* ===== Variables ===== */
+:root {
+    --primary-color: #40739e;
+    --secondary-color: #2f3640;
+    --accent-color: #007bff;
+    --hover-color: #2f3640;
+    --text-color: #333;
+    --bg-color: #f5f6fa;
+    --card-bg: #fff;
+    --border-radius: 8px;
+    --shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* ===== General ===== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+
+p {
+    line-height: 1.5;
+}
+
+/* ===== Header & Navigation ===== */
+header {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 15px 20px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+nav {
+    background: #222;
+    padding: 12px;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #f0a500;
+}
+
+/* ===== Container ===== */
+.container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: var(--card-bg);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+}
+
+/* ===== Forms ===== */
+form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select,
+textarea {
+    padding: 8px 10px;
+    margin-bottom: 15px;
+    width: 100%;
+    border-radius: var(--border-radius);
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+textarea {
+    border-radius: 20px;
+}
+
+form button {
+    padding: 8px 15px;
+    background: var(--secondary-color);
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: #050672;
+}
+
+/* ===== Buttons & Links ===== */
+button,
+a.button,
+.read-more {
+    background-color: var(--accent-color);
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+button:hover,
+a.button:hover,
+.read-more:hover {
+    background-color: var(--hover-color);
+}
+
+/* ===== Table ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th,
+table td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+table th {
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+
+table tr:nth-child(even) {
+    background-color: #f1f2f6;
+}
+
+table tr:hover {
+    background-color: #dcdde1;
+}
+
+/* ===== Cards ===== */
+.post-card {
+    background: var(--card-bg);
+    border-radius: var(--border-radius);
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    box-shadow: var(--shadow);
+    transition: transform 0.2s;
+}
+
+.post-card:hover {
+    transform: translateY(-5px);
+}
+
+.post-card h3 {
+    margin: 0 0 10px;
+}
+
+.post-card .meta {
+    font-size: 0.9em;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+/* ===== Categories ===== */
+.category {
+    display: inline-block;
+    background: #eee;
+    padding: 5px 12px;
+    margin: 5px 5px 5px 0;
+    border-radius: 20px;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.category:hover {
+    background: var(--accent-color);
+    color: #fff;
+}
+
+/* ===== Search Box ===== */
+.search-box input[type="text"] {
+    width: 100%;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    border-radius: var(--border-radius);
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+/* ===== Pagination ===== */
+div.pagination a {
+    background-color: var(--accent-color);
+    color: #fff;
+    padding: 5px 10px;
+    margin: 2px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+div.pagination a:hover {
+    background-color: var(--hover-color);
+}
+
+div.pagination a.current {
+    font-weight: bold;
+    background-color: #3240bd;
+}
+
+/* ===== Sections ===== */
+section {
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: var(--border-radius);
+    background: var(--card-bg);
+    box-shadow: var(--shadow);
+}
+
+/* ===== Responsive ===== */
+@media(max-width: 768px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    table tr {
+        margin-bottom: 15px;
+    }
+
+    table td {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+    }
+
+    table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 15px;
+        font-weight: bold;
+        text-align: left;
+    }
+}
